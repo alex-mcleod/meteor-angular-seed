@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "angularjs": {}
+    },
+    "packages": {
+      "angularjs": {
+        "git": "https://github.com/lvbreda/Meteor_angularjs.git",
+        "tag": "v2.0.0",
+        "commit": "7ab52321d1dd3a45db505899829d62b0a0503bec"
+      }
+    }
+  }
+}
