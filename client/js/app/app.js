@@ -10,6 +10,7 @@ angular.module('reviseApp', [
   'meteor',
   'zj.namedRoutes',
   'ui',
+  'ui.bootstrap',
   // App
   'reviseControllers',
   'reviseServices',
