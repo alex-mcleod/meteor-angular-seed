@@ -14,7 +14,8 @@ angular.module('reviseApp', [
   // App
   'reviseControllers',
   'reviseServices',
-  'reviseModels'
+  'reviseModels',
+  'reviseDirectives'
 ]).
   config(function ($routeProvider) {
     $routeProvider

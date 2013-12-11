@@ -1,0 +1,13 @@
+<div class="header" ng-controller="NavCtrl">
+  <ul class="nav nav-pills pull-right" >
+  	<li ng-repeat-start="link in links" ng-class='{active: link.active}'><a ng-href='{{link.href}}'>{{link.text}}</a></li>
+  	<li ng-repeat-end></li>
+	<li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+        <div class="dropdown-menu">
+          <ng-include src="'views/partials/login_form.html'"></ng-include>
+        </div>
+    </li>
+  </ul>
+  <h3 class="text-muted">{{siteTitle}}</h3>
+</div>
