@@ -20,12 +20,12 @@ angular.module('reviseApp', [
   config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html',
+        templateUrl: 'views/base/home.html',
         controller: 'HomeCtrl',
         name: 'home'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: 'views/base/about.html',
         controller: 'AboutCtrl',
         name: 'about'
       })

@@ -71,9 +71,34 @@ angular.module('reviseControllers', []).
   ]).
   controller('LoginCtrl', [
     '$scope',
+    'GenericModal',
     'Accounts',
-    function ($scope, Accounts) {
-        // Nothing.
+    function ($scope, GenericModal, Accounts) {
+      // var modalInstance = $modal.open({
+      //   templateUrl: 'myModalContent.html',
+      //   controller: ModalInstanceCtrl,
+      //   resolve: {
+      //     items: function () {
+      //       return $scope.items;
+      //     }
+      //   }
+      // });
+      $scope.openResponseModal = function(response) {
+          var modalInstance = new GenericModal('hello', 'world');
+          console.log(modalInstance);
+      }
+      $scope.login = function() {
+        if ($scope.loginForm.$valid){
+          Accounts.loginWithPassword(
+            $scope.email, 
+            $scope.password,
+            function(error) {
+              console.log(error);
+              //$scope.openResponseModal();
+            }
+          );
+        } 
+      };
     }
   ]);
 

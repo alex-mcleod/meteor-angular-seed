@@ -12,4 +12,15 @@ angular.module('reviseServices', []).
         }
       };
     }
+  ]).
+  factory('GenericModal', [
+    '$modal', 
+    function($modal) {
+      return function(heading, content){
+        var modalInstance = $modal.open({
+          templateUrl: 'views/base/generic_modal.html'
+        });
+        return modalInstance;
+      };
+    }
   ]);
