@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('reviseModels', []).
-  factory('Courses', [
+angular.module('chatterModels', []).
+  factory('Messages', [
   	'$meteorCollection', 
   	function($meteorCollection) {
-      return $meteorCollection('courses');
+      return $meteorCollection('messages');
   }]).
   factory('Accounts', [
   	'$meteorCollection', 

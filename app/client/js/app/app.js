@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reviseApp', [
+angular.module('meteorApp', [
   // Angular
   'ngCookies',
   'ngResource',
@@ -12,20 +12,20 @@ angular.module('reviseApp', [
   'ui',
   'ui.bootstrap',
   // App
-  'reviseControllers',
-  'reviseServices',
-  'reviseModels',
-  'reviseDirectives'
+  'chatterControllers',
+  'chatterServices',
+  'chatterModels',
+  'chatterDirectives'
 ]).
   config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/base/home.html',
+        templateUrl: 'partials/base/home.html',
         controller: 'HomeCtrl',
         name: 'home'
       })
       .when('/about', {
-        templateUrl: 'views/base/about.html',
+        templateUrl: 'partials/base/about.html',
         controller: 'AboutCtrl',
         name: 'about'
       })
@@ -33,4 +33,4 @@ angular.module('reviseApp', [
         redirectTo: '/'
       });
   }).
-  constant('SITE_TITLE', 'Revise');
+  constant('SITE_TITLE', 'Chatter');

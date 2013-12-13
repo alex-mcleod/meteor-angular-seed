@@ -1,3 +1,3 @@
-Meteor.publish('courses', function () {
-	return Courses.find({});
+Meteor.publish('messages', function () {
+	return Messages.find({});
 });

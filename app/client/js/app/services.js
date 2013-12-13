@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reviseServices', []).
+angular.module('chatterServices', []).
   factory('PageService', [
     'SITE_TITLE', 
     function(SITE_TITLE) {
@@ -10,17 +10,6 @@ angular.module('reviseServices', []).
         setTitle: function(newTitle) {
             title = newTitle + ' - ' + SITE_TITLE;
         }
-      };
-    }
-  ]).
-  factory('GenericModal', [
-    '$modal', 
-    function($modal) {
-      return function(heading, content){
-        var modalInstance = $modal.open({
-          templateUrl: 'views/base/generic_modal.html'
-        });
-        return modalInstance;
       };
     }
   ]);

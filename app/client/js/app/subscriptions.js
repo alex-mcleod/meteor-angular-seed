@@ -1,3 +1,3 @@
 'use strict';
 
-Meteor.subscribe('courses');
+Meteor.subscribe('messages');

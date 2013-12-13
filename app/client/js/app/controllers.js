@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('reviseControllers', []).
+angular.module('chatterControllers', []).
   controller('TitleCtrl', [
     '$scope', 
     'PageService', 
@@ -37,9 +37,9 @@ angular.module('reviseControllers', []).
   controller('HomeCtrl', [
     '$scope',
     '$meteor',
-    'Courses',
-    function ($scope, $meteor, Courses) {
-      $scope.courses = Courses.find({});
+    'Messages',
+    function ($scope, $meteor, Messages) {
+      $scope.messages = Messages.find({});
     }
   ]).
   controller('AboutCtrl', [
@@ -48,45 +48,31 @@ angular.module('reviseControllers', []).
       // Nothing.
     }
   ]).
-  controller('CreateCourseCtrl', [
+  controller('CreateMessageCtrl', [
     '$scope',
-    'Courses',
-    function ($scope, Courses) {
-      $scope.createCourse = function() {
-        if ($scope.createCourseForm.$valid){
-          Courses.insert({
-            title : $scope.title,
-            description : $scope.description
+    'Messages',
+    function ($scope, Messages) {
+      $scope.createmessage = function() {
+        if ($scope.createMessageForm.$valid){
+          Messages.insert({
+            username : $scope.username,
+            content : $scope.content
           });
         } 
       };
     }
   ]).
-  controller('CourseListItemCtrl', [
+  controller('MessageListItemCtrl', [
     '$scope',
-    'Courses',
-    function ($scope, Courses) {
+    'Messages',
+    function ($scope, Messages) {
         // Nothing.
     }
   ]).
   controller('LoginCtrl', [
     '$scope',
-    'GenericModal',
     'Accounts',
-    function ($scope, GenericModal, Accounts) {
-      // var modalInstance = $modal.open({
-      //   templateUrl: 'myModalContent.html',
-      //   controller: ModalInstanceCtrl,
-      //   resolve: {
-      //     items: function () {
-      //       return $scope.items;
-      //     }
-      //   }
-      // });
-      $scope.openResponseModal = function(response) {
-          var modalInstance = new GenericModal('hello', 'world');
-          console.log(modalInstance);
-      }
+    function ($scope, Accounts) {
       $scope.login = function() {
         if ($scope.loginForm.$valid){
           Accounts.loginWithPassword(
@@ -94,7 +80,7 @@ angular.module('reviseControllers', []).
             $scope.password,
             function(error) {
               console.log(error);
-              //$scope.openResponseModal();
+              // Handle login error.
             }
           );
         } 
