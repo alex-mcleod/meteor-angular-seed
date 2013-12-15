@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "angularjs": {
+    	"path": "../local_packages/angularjs"
+    },
+    "flame-on-ui": {
+   		"path" : "../local_packages/flame-on-ui"
+    }
+  }
+}

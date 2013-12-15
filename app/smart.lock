@@ -1,0 +1,26 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "angularjs": {
+        "path": "../local_packages/angularjs"
+      },
+      "flame-on-ui": {
+        "path": "../local_packages/flame-on-ui"
+      }
+    },
+    "packages": {
+      "angularjs": {
+        "path": "../local_packages/angularjs"
+      },
+      "flame-on-ui": {
+        "path": "../local_packages/flame-on-ui"
+      },
+      "flame-on": {
+        "git": "https://github.com/kievechua/flame-on.git",
+        "tag": "v0.2.0",
+        "commit": "c2b0d0503ac9522026e235e289d0b71c643b677b"
+      }
+    }
+  }
+}
