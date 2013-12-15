@@ -1,0 +1,24 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "angularjs": {},
+      "flame-on-ui": {}
+    },
+    "packages": {
+      "angularjs": {
+        "git": "https://github.com/alex-mcleod/Meteor_angularjs",
+        "commit": "aa2ed6e74c5de1df9be3e63722049051ec1911e9"
+      },
+      "flame-on-ui": {
+        "git": "https://github.com/alex-mcleod/flame-on-ui",
+        "commit": "c1cb496832f3e5365012ac9edb9110e82696b8c5"
+      },
+      "flame-on": {
+        "git": "https://github.com/kievechua/flame-on.git",
+        "tag": "v0.2.0",
+        "commit": "c2b0d0503ac9522026e235e289d0b71c643b677b"
+      }
+    }
+  }
+}
