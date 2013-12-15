@@ -36,9 +36,8 @@ angular.module('chatterControllers', []).
   ]).
   controller('HomeCtrl', [
     '$scope',
-    '$meteor',
     'Messages',
-    function ($scope, $meteor, Messages) {
+    function ($scope, Messages) {
       $scope.messages = Messages.find({});
     }
   ]).
