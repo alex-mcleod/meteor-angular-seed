@@ -1,6 +1,6 @@
 <div ng-controller="MessageListItemCtrl">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="message.remove()">&times;</button>
 	<h4>{{message.username}}</h4>
 	<p>{{message.content}}</p>
-	<a class="btn btn-primary" ng-href="#" ng-click="message.remove()">Delete</a>
 	<hr>
 </div>
