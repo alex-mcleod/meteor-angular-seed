@@ -13,7 +13,7 @@ angular.module('chatterModels', []).
       var Accounts = {};
       Accounts.users = $meteor.users;
       Accounts.userId = $meteor.UserId;
-      Accounts.user 
+      Accounts.user = $meteor.user;
       Accounts.loginWithPassword = $meteor.loginWithPassword;
       Accounts.logout = $meteor.logout;
       Accounts.loginWithExternalServise = $meteor.loginWithExternalServise;
