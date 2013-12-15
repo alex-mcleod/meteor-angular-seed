@@ -23,5 +23,4 @@ node_modules
 .npm
 .git
 .build*
-.meteor/
 app/packages/
