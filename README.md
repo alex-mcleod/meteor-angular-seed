@@ -4,7 +4,7 @@
 This is simply an updated amalgamation of other attempts to integrate Angular and Meteor. It is compatible with the latest version of Meteor (v0.7.0.1) and includes the latest version of Angular (v1.2.4). Bootstrap, Angular-ui and Angular-ui-bootstrap are also included.
 
 ##Why
-Meteor makes transporting data between clients and servers exceptionally simple. Angular makes displaying and manipulating that data wonderfully easy. Together they make developing realtime, data-driven webapps quick and painless.   
+Meteor makes transporting data between clients and servers simple. Angular makes displaying and manipulating that data easy. Together they make developing realtime, data-driven webapps quick and painless.   
 
 ##How
 Just clone this repo and run mrt (https://github.com/oortcloud/meteorite) to install the dependencies and start the development server. Head to http://localhost:3000/ to start using the sample app. Read through the angularjs and meteorjs docs before taking a look at the source code to understand how it all works.
